@@ -1,0 +1,1688 @@
+[
+  {
+    "_id": "59ee2cab7aceb80004c534b5",
+    "name": "Javascript General",
+    "isComingSoon": false,
+    "order": 1,
+    "__v": 2,
+    "quizzes": [
+      {
+        "_id": "59ee2cc67aceb80004c534b6",
+        "name": "JS Basics",
+        "author": "Enigma",
+        "order": 1,
+        "__v": 10,
+        "questions": [
+          {
+            "_id": "59ee2d397aceb80004c534b7",
+            "text": "Which of the following is wrong about the above one-line code?",
+            "code": "a = b + 3;",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#statements",
+            "solutionLinkText": "Read more on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "The characters `a` and `b` are variables and the values assigned to them cannot be changed once assigned.",
+                "correct": true,
+                "_id": "59ee2d397aceb80004c534bb"
+              },
+              {
+                "text": "`3` is a literal value.",
+                "correct": false,
+                "_id": "59ee2d397aceb80004c534ba"
+              },
+              {
+                "text": "`+` is an operator.",
+                "correct": false,
+                "_id": "59ee2d397aceb80004c534b9"
+              },
+              {
+                "text": "The whole line is a statement.",
+                "correct": false,
+                "_id": "59ee2d397aceb80004c534b8"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "The characters `a` and `b` are variables which hold values. We can think of them as symbolic containers for values. `3` itself is a value, and because it doesn't need to be stored in a variable, it is called a literal value. `=` and `+` are operators. They perform operations with the values and variables like mathematical calculations or assignments. A group of words, numbers, and operators that performs a specific task is a statement, so the whole line is a statement. It tells the computer to add `3` to the value of `b` and assign to `a`.\n\nIn Javascript the value in a variable can vary over time as they are reassigned new values.",
+                "_id": "59ee2d397aceb80004c534bc"
+              }
+            ]
+          },
+          {
+            "_id": "59ee2db67aceb80004c534bd",
+            "text": "What will the above code print to the console?",
+            "code": "var a = 5;\na++;\na -= 3;\na *= 2;\na--;\nconsole.log(a);",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#operators",
+            "solutionLinkText": "Read more on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "3",
+                "correct": false,
+                "_id": "59ee2db67aceb80004c534c1"
+              },
+              {
+                "text": "4",
+                "correct": false,
+                "_id": "59ee2db67aceb80004c534c0"
+              },
+              {
+                "text": "5",
+                "correct": true,
+                "_id": "59ee2db67aceb80004c534bf"
+              },
+              {
+                "text": "6",
+                "correct": false,
+                "_id": "59ee2db67aceb80004c534be"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "`+` (addition), `-` (subtraction), `*` (multiplication), and `/` (division) are math operators.\n`+=`, `-=`, `*=`, and `/=` are compound operators that combine a math operation with assignment:\n`a -= 3` (same as `a = a - 3`)\n`a *= 2` (same as `a = a * 2`)\n`++` (increment), `--` (decrement) are Increment/Decrement operators:\n`a++` (similar to `a = a + 1`)\n`a--` (similar to `a = a - 1`)",
+                "_id": "59ee2db67aceb80004c534c2"
+              }
+            ]
+          },
+          {
+            "_id": "59ee2e367aceb80004c534c3",
+            "text": "Which of the following is wrong about the above one-line statement?",
+            "code": "c = d * 5;",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#expressions",
+            "solutionLinkText": "Read more on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "`5` is a literal value expression.",
+                "correct": false,
+                "_id": "59ee2e367aceb80004c534c7"
+              },
+              {
+                "text": "`c` is a variable expression.",
+                "correct": false,
+                "_id": "59ee2e367aceb80004c534c6"
+              },
+              {
+                "text": "`c = d * 5` is a call expression.",
+                "correct": true,
+                "_id": "59ee2e367aceb80004c534c5"
+              },
+              {
+                "text": "`d * 5` is an arithmetic expression.",
+                "correct": false,
+                "_id": "59ee2e367aceb80004c534c4"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "Statements are made up of one or more expressions. An expression is any reference to a variable or value, or a set of variable(s) and value(s) combined with operators. `c` is a variable expression, which means to retrieve its current value. `c = d * 5` is an assignment expression, which means to assign the result of the `d * 5` expression to the variable `c`.\n`alert(a)` would be an example of call expression. `alert` here is a function call.",
+                "_id": "59ee2e367aceb80004c534c8"
+              }
+            ]
+          },
+          {
+            "_id": "59ee2e887aceb80004c534c9",
+            "text": "Which of the following is NOT correct about Javascript variables?",
+            "code": "",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#variables",
+            "solutionLinkText": "Read more on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "`var` keyword can be used to declare a variable.",
+                "correct": false,
+                "_id": "59ee2e887aceb80004c534cd"
+              },
+              {
+                "text": "Variables are used to store values.",
+                "correct": false,
+                "_id": "59ee2e887aceb80004c534cc"
+              },
+              {
+                "text": "Variable names must be case-sensitive and unique.",
+                "correct": false,
+                "_id": "59ee2e887aceb80004c534cb"
+              },
+              {
+                "text": "Variables can only store strings, numbers and booleans.",
+                "correct": true,
+                "_id": "59ee2e887aceb80004c534ca"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "Variables can store different value types like `string`, `number`, `boolean`, `object`, `undefined`, and `symbol` (new to ES6).",
+                "_id": "59ee2e887aceb80004c534ce"
+              }
+            ]
+          },
+          {
+            "_id": "59ee2f077aceb80004c534cf",
+            "text": "Which of the following will evaluate as `true`?",
+            "code": "",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#equality",
+            "solutionLinkText": "Read more on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "`'11' === 11`",
+                "correct": false,
+                "_id": "59ee2f077aceb80004c534d3"
+              },
+              {
+                "text": "`true && false`",
+                "correct": false,
+                "_id": "59ee2f077aceb80004c534d2"
+              },
+              {
+                "text": "`!(true || false)`",
+                "correct": false,
+                "_id": "59ee2f077aceb80004c534d1"
+              },
+              {
+                "text": "`'7' == 7`",
+                "correct": true,
+                "_id": "59ee2f077aceb80004c534d0"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "`&&` (and), `||` (or) are logical operators.\n`==` (loose-equals),\n`===` (strict-equals),\n`!=` (loose not-equals),\n`!==` (strict not-equals) are quality operators.\nStrict equity will compare both value and types.\nIn the first option both sides have same value but different types. `'11'` is a `string` and `11` is a `number`.\nFor the last option, JavaScript will convert the left-hand side `'11'` to its number equivalent `11`. The comparison then becomes `11 == 11`, which is `true`. This is an example of implicit coercion.",
+                "_id": "59ee2f077aceb80004c534d6"
+              },
+              {
+                "isCode": true,
+                "content": "var a = \"42\";\nvar b = Number(a);",
+                "_id": "59ee2f077aceb80004c534d5"
+              },
+              {
+                "isCode": false,
+                "content": "Using `Number(..)` (a built-in function) as shown above is an explicit coercion from any other type to the `number` type.",
+                "_id": "59ee2f077aceb80004c534d4"
+              }
+            ]
+          },
+          {
+            "_id": "59ee2f6d7aceb80004c534d7",
+            "text": "Which character or set of characters can be used to make a single-line comment in Javascript?",
+            "code": "",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#code-comments",
+            "solutionLinkText": "Read more on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "`#`",
+                "correct": false,
+                "_id": "59ee2f6d7aceb80004c534db"
+              },
+              {
+                "text": "`//`",
+                "correct": true,
+                "_id": "59ee2f6d7aceb80004c534da"
+              },
+              {
+                "text": "`||`",
+                "correct": false,
+                "_id": "59ee2f6d7aceb80004c534d9"
+              },
+              {
+                "text": "`--`",
+                "correct": false,
+                "_id": "59ee2f6d7aceb80004c534d8"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "Code comments are important part of programming. These are bits of text in your program that are inserted purely to explain things to a human. The interpreter/compiler will always ignore these comments. In JavaScript, there are two types of comments possible: a single-line comment and a multiline comment.",
+                "_id": "59ee2f6d7aceb80004c534dd"
+              },
+              {
+                "isCode": true,
+                "content": "// This is a single-line comment\n\n/* But this is\n       a multiline\n             comment.\n                      */",
+                "_id": "59ee2f6d7aceb80004c534dc"
+              }
+            ]
+          },
+          {
+            "_id": "59ee2fc67aceb80004c534de",
+            "text": "What do you expect the above code will print out to the console respectively?",
+            "code": "var a = 3;\nvar b = 10;\nfunction outer() {\n\tvar a = 1;\n\tfunction inner() {\n\t\tvar b = 2;\n\t\tconsole.log( a + b );\n\t}\n\tinner();\n\tconsole.log( a );\n}\nconsole.log(a);\nouter();\nconsole.log(b);",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#scope",
+            "solutionLinkText": "Read more on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "3, 3, 1, 10",
+                "correct": true,
+                "_id": "59ee2fc67aceb80004c534e2"
+              },
+              {
+                "text": "1, 3, 1, 2",
+                "correct": false,
+                "_id": "59ee2fc67aceb80004c534e1"
+              },
+              {
+                "text": "3, 13, 1, 10",
+                "correct": false,
+                "_id": "59ee2fc67aceb80004c534e0"
+              },
+              {
+                "text": "undefined, 3, 1, undefined",
+                "correct": false,
+                "_id": "59ee2fc67aceb80004c534df"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "Programming has a term for this concept: scope (technically called lexical scope). In JavaScript, each function gets its own scope. Scope is basically a collection of variables as well as the rules for how those variables are accessed by name. Only code inside that function can access that function's scoped variables. If one scope is nested inside another, code inside the innermost scope can access variables from either scope.\nIn the question, when `a` is accessed from the inner function, it will get the value of `1`, masking the global a.\n\nIf `a` is accessed from the global scope, it will retrieve the value of global `a`, which is `3`. The same rule is in place for `b`.",
+                "_id": "59ee2fc67aceb80004c534e3"
+              }
+            ]
+          },
+          {
+            "_id": "59fdf46b484b9c00049d2060",
+            "text": "Which of the following will evaluate as `false`?",
+            "code": "",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#values--types",
+            "solutionLinkText": "Read more on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "`typeof true == 'boolean'`",
+                "correct": false,
+                "_id": "59fdf46b484b9c00049d2064"
+              },
+              {
+                "text": "`typeof 'hey' == 'string'`",
+                "correct": false,
+                "_id": "59fdf46b484b9c00049d2063"
+              },
+              {
+                "text": "`typeof 'undefined' == 'undefined'`",
+                "correct": true,
+                "_id": "59fdf46b484b9c00049d2062"
+              },
+              {
+                "text": "`typeof null == 'object'`",
+                "correct": false,
+                "_id": "59fdf46b484b9c00049d2061"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "JavaScript has typed values, not typed variables. Only values have types in JavaScript, variables are just simple containers for those values. JavaScript has dynamic types. This means that the same variable can be used to hold different data types. The following built-in types are available: `string`, `number`, `boolean`, `undefined`, `object`, `symbol` (new to ES6)\nThe return value from the `typeof` operator is always one of six string values. That is, typeof \"abc\" returns \"string\", not string.\nUndefined and null are equal in value but different in type:",
+                "_id": "59fdf46b484b9c00049d2068"
+              },
+              {
+                "isCode": true,
+                "content": "typeof undefined      // undefined\ntypeof null           // object\n\nnull === undefined    // false\nnull == undefined     // true",
+                "_id": "59fdf46b484b9c00049d2067"
+              },
+              {
+                "isCode": false,
+                "content": "The third answer would evaluate as true if it was written like below. But in the question the value provided to `typeof` operator was a `string` actually, not `undefined`.",
+                "_id": "59fdf46b484b9c00049d2066"
+              },
+              {
+                "isCode": true,
+                "content": "typeof undefined == 'undefined' // true",
+                "_id": "59fdf46b484b9c00049d2065"
+              }
+            ]
+          },
+          {
+            "_id": "59fdf4db484b9c00049d2069",
+            "text": "Which of the following will evaluate as `true`?",
+            "code": "var obj = {\n\ta: true,\n\tb: '5',\n  c: 3\n};\nvar c = 'b';",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#objects",
+            "solutionLinkText": "Read more on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "`obj[a]`",
+                "correct": false,
+                "_id": "59fdf4db484b9c00049d206d"
+              },
+              {
+                "text": "`typeof obj.b == 'number'`",
+                "correct": false,
+                "_id": "59fdf4db484b9c00049d206c"
+              },
+              {
+                "text": "`!obj['a']`",
+                "correct": false,
+                "_id": "59fdf4db484b9c00049d206b"
+              },
+              {
+                "text": "`obj[c] * 2 < 20`",
+                "correct": true,
+                "_id": "59fdf4db484b9c00049d206a"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "The object type refers to a compound value where you can set properties (named locations) that each hold their own values of any type. Properties can either be accessed with dot notation (i.e., `obj.a`) or bracket notation (i.e., `obj[\"a\"]`). Dot notation is shorter and generally easier to read, and is thus preferred when possible. The `[ ]` notation requires either a variable or a string literal (which needs to be wrapped in \" .. \" or ' .. ').\nFor example to access first property we can write `obj['a']` or `obj.a` which will give us the value of the first property(`true`).\nIf we write a variable inside the brackets as we see in the first option, because variable `a` is not defined, `obj[a]` will return `undefined`.\n`obj.b` is holding a string `'5'`, not a number. That's why second option will evaluate as `false`.\nIn the last option, keep in mind that variable `c` is holding `'b'`. That's why it is the same to write `obj[c]` or `obj['b']`. The calculation\n`'5' * 2` will return `10` as number because of implicit coercion which is smaller than `20`.",
+                "_id": "59fdf4db484b9c00049d206e"
+              }
+            ]
+          },
+          {
+            "_id": "59fdf534484b9c00049d206f",
+            "text": "Which of the following is NOT a built-in method of `string` type?",
+            "code": "",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#built-in-type-methods",
+            "solutionLinkText": "Read more on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": ".length()",
+                "correct": false,
+                "_id": "59fdf534484b9c00049d2073"
+              },
+              {
+                "text": ".toFixed(n)",
+                "correct": true,
+                "_id": "59fdf534484b9c00049d2072"
+              },
+              {
+                "text": ".indexOf()",
+                "correct": false,
+                "_id": "59fdf534484b9c00049d2071"
+              },
+              {
+                "text": ".toLowerCase()",
+                "correct": false,
+                "_id": "59fdf534484b9c00049d2070"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "The built-in types and subtypes have behaviours exposed as properties and methods that are quite powerful and useful. For example each string value has access to methods such as\n`.length()`, `.indexOf()`, `.toLowerCase()`,\n`.toUpperCase()`, `.concat()`, `.charAt()`, `.split()` etc.\nHowever `.toFixed()` is a method provided for numbers which converts a number into a string, keeping only two decimals.\nThe \"how\" behind being able to call `'str'.toUpperCase()` is more complicated than just that method existing on the value.\nBriefly, there is a `String` (capital S) object wrapper form, typically called a \"native,\" that pairs with the primitive string type; it's this object wrapper that defines the `toUpperCase()` method on its prototype.\nWhen you use a primitive value like `\"hello world\"` as an object by referencing a property or method (e.g., `'str'.toUpperCase()` in the previous snippet), JS automatically \"boxes\" the value to its object wrapper counterpart (hidden under the covers).\nA `string` value can be wrapped by a `String` object, a `number` can be wrapped by a `Number` object, and a `boolean` can be wrapped by a `Boolean` object. For the most part, you don't need to worry about or directly use these object wrapper forms of the values -- prefer the primitive value forms in practically all cases and JavaScript will take care of the rest for you.",
+                "_id": "59fdf534484b9c00049d2074"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "_id": "59fdf588484b9c00049d2075",
+        "name": "JS Basics II",
+        "author": "Enigma",
+        "order": 2,
+        "__v": 10,
+        "questions": [
+          {
+            "_id": "59fdf60f484b9c00049d2076",
+            "text": "Which of the following is an example of explicit coercion?",
+            "code": "",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#comparing-values",
+            "solutionLinkText": "Read More on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "`'$' + 10`",
+                "correct": false,
+                "_id": "59fdf60f484b9c00049d207a"
+              },
+              {
+                "text": "`Number('11')`",
+                "correct": true,
+                "_id": "59fdf60f484b9c00049d2079"
+              },
+              {
+                "text": "`3 * '5'`",
+                "correct": false,
+                "_id": "59fdf60f484b9c00049d2078"
+              },
+              {
+                "text": "`'11' - 1`",
+                "correct": false,
+                "_id": "59fdf60f484b9c00049d2077"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "Coercion comes in two forms in JavaScript: explicit and implicit. Explicit coercion is simply that you can see obviously from the code that a conversion from one type to another will occur, whereas implicit coercion is when the type conversion can happen as more of a non-obvious side effect of some other operation.\nHere's an example of explicit coercion:",
+                "_id": "59fdf60f484b9c00049d207e"
+              },
+              {
+                "isCode": true,
+                "content": "var a = \"42\";\nvar b = Number(a);\na;\t// \"42\"\nb;\t// 42 -- the number!",
+                "_id": "59fdf60f484b9c00049d207d"
+              },
+              {
+                "isCode": false,
+                "content": "And here's an example of implicit coercion:",
+                "_id": "59fdf60f484b9c00049d207c"
+              },
+              {
+                "isCode": true,
+                "content": "var a = \"42\";\nvar b = a * 1;\t// \"42\" implicitly coerced to 42 here\na;\t// \"42\"\nb;\t// 42 -- the number!",
+                "_id": "59fdf60f484b9c00049d207b"
+              }
+            ]
+          },
+          {
+            "_id": "59fdf660484b9c00049d207f",
+            "text": "Which of the following non-boolean values become true when coerced to a boolean in other words 'truthy'?",
+            "code": "",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#truthy--falsy",
+            "solutionLinkText": "Read More on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "`\"\"`",
+                "correct": false,
+                "_id": "59fdf660484b9c00049d2083"
+              },
+              {
+                "text": "`-0`",
+                "correct": false,
+                "_id": "59fdf660484b9c00049d2082"
+              },
+              {
+                "text": "`[]`",
+                "correct": false,
+                "_id": "59fdf660484b9c00049d2081"
+              },
+              {
+                "text": "`NaN`",
+                "correct": true,
+                "_id": "59fdf660484b9c00049d2080"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "By \"truthy\" and \"falsy\" we mean this: when a non-boolean value is coerced to a boolean, does it become `true` or `false`?\nThe specific list of \"falsy\" values in JavaScript is as follows:\n`\"\"` (empty string)\n`0`, `-0`, `NaN` (invalid number)\n`null`, `undefined`\n`false`\nAny value that's not on this \"falsy\" list is \"truthy.\" Here are some examples of those:\n`\"hello\"`\n`42`\n`true`\n`[ ]`, `[ 1, \"2\", 3 ]` (arrays)\n`{ }`, `{ a: 42 }` (objects)\n`function foo() { .. }` (functions)",
+                "_id": "59fdf660484b9c00049d2084"
+              }
+            ]
+          },
+          {
+            "_id": "59fdf6a2484b9c00049d2085",
+            "text": "Which of the following is a valid Javascript variable name?",
+            "code": "",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#variables",
+            "solutionLinkText": "Read More on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "`#age`",
+                "correct": false,
+                "_id": "59fdf6a2484b9c00049d2089"
+              },
+              {
+                "text": "`$age`",
+                "correct": true,
+                "_id": "59fdf6a2484b9c00049d2088"
+              },
+              {
+                "text": "`%age`",
+                "correct": false,
+                "_id": "59fdf6a2484b9c00049d2087"
+              },
+              {
+                "text": "`-age`",
+                "correct": false,
+                "_id": "59fdf6a2484b9c00049d2086"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "An identifier must start with a-z, A-Z, $, or _ . It can then contain any of those characters plus the numerals 0-9.\n\nGenerally, the same rules apply to a property name as to a variable identifier. However, certain words cannot be used as variables, but are OK as property names. These words are called \"reserved words,\" and include the JS keywords (`for`, `in`, `if`, etc.) as well as `null`, `true`, and `false`.",
+                "_id": "59fdf6a2484b9c00049d208a"
+              }
+            ]
+          },
+          {
+            "_id": "59fdf6e6484b9c00049d208b",
+            "text": "What will the above code print out?",
+            "code": "var a = 2;\nfoo();\nfunction foo() {\n\ta = 3;\n\treturn;\n\tvar a;\n}\nconsole.log( a );",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#function-scopes",
+            "solutionLinkText": "Read More on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "`2`",
+                "correct": true,
+                "_id": "59fdf6e6484b9c00049d208f"
+              },
+              {
+                "text": "`3`",
+                "correct": false,
+                "_id": "59fdf6e6484b9c00049d208e"
+              },
+              {
+                "text": "`undefined`",
+                "correct": false,
+                "_id": "59fdf6e6484b9c00049d208d"
+              },
+              {
+                "text": "`null`",
+                "correct": false,
+                "_id": "59fdf6e6484b9c00049d208c"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "`var` keyword can be used to declare a variable that will belong to the current function scope, or the global scope if at the top level outside of any function. Wherever a `var` appears inside a scope, that declaration is taken to belong to the entire scope and accessible everywhere throughout. Metaphorically, this behaviour is called hoisting, when a `var` declaration is conceptually \"moved\" to the top of its enclosing scope.\nIn the example code, the line `var a;` was moved on top of the function foo's scope. That's why the `a` inside `foo` function is a local variable in the function scope, it has nothing to do with global `a` and masks the global `a`. And the `console.log(a)` statement outside of `foo` functional scope, will print global `a` which is `2`. If we didn't write `var a;` inside the function, it was going to change the global `a`.",
+                "_id": "59fdf6e6484b9c00049d2090"
+              }
+            ]
+          },
+          {
+            "_id": "59fdf755484b9c00049d2091",
+            "text": "What will happen if we include above function in our code with a variable initialization without a `var` keyword?",
+            "code": "function foo() {\n\ta = 3;\n}\nfoo();\nconsole.log(a);",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#strict-mode",
+            "solutionLinkText": "Read More on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "_id": "59fdf755484b9c00049d2095",
+                "correct": false,
+                "text": "`ReferenceError` will be thrown since it is not properly initialized before."
+              },
+              {
+                "_id": "59fdf755484b9c00049d2094",
+                "correct": false,
+                "text": "No errors, It will print `undefined`."
+              },
+              {
+                "_id": "59fdf755484b9c00049d2093",
+                "correct": false,
+                "text": "No errors, it will create a local variable inside function scope."
+              },
+              {
+                "_id": "59fdf755484b9c00049d2092",
+                "correct": true,
+                "text": "It depends if strict mode is in use or not. It will create top-level global scope variable if strict mode is not in use. Otherwise it will throw `ReferenceError`."
+              }
+            ],
+            "solution": [
+              {
+                "_id": "59fdf755484b9c00049d2099",
+                "content": "ES5 added a \"strict mode\" to the language, which tightens the rules for certain behaviours. Generally, these restrictions are seen as keeping the code to a safer and more appropriate set of guidelines. You can opt in to strict mode for an individual function, or an entire file, depending on where you put the strict mode pragma:",
+                "isCode": false
+              },
+              {
+                "_id": "59fdf755484b9c00049d2098",
+                "content": "function foo() {\n\t\"use strict\";\n\t// this code is strict mode\n\tfunction bar() {\n\t\t// this code is strict mode\n\t}\n}\n// this code is not strict mode",
+                "isCode": true
+              },
+              {
+                "_id": "59fdf755484b9c00049d2097",
+                "content": "One key difference (improvement!) with strict mode is disallowing the implicit auto-global variable declaration from omitting the var:",
+                "isCode": false
+              },
+              {
+                "_id": "59fdf755484b9c00049d2096",
+                "content": "function foo() {\n\t\"use strict\";\t// turn on strict mode\n\ta = 1;\t\t\t// var missing, ReferenceError\n}\nfoo();",
+                "isCode": true
+              }
+            ]
+          },
+          {
+            "_id": "59fdf837484b9c00049d209a",
+            "text": "Which of the following is an example of the use of ternary operator which can be used to shorten `if..else` statements?",
+            "code": "",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#conditionals",
+            "solutionLinkText": "Read More on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "`(x == 2) ? doSomething() : doAnotherThing();`",
+                "correct": true,
+                "_id": "59fdf837484b9c00049d209e"
+              },
+              {
+                "text": "`x == 2 && doSomething();`",
+                "correct": false,
+                "_id": "59fdf837484b9c00049d209d"
+              },
+              {
+                "text": "`x == 2 || doSomething();`",
+                "correct": false,
+                "_id": "59fdf837484b9c00049d209c"
+              },
+              {
+                "text": "`if (x == 2) { doSomething(); }`",
+                "correct": false,
+                "_id": "59fdf837484b9c00049d209b"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "Another form of conditional in JavaScript is the \"conditional operator,\" often called the \"ternary operator.\" It's like a more concise form of a single `if..else` statement, such as:",
+                "_id": "59fdf837484b9c00049d20a3"
+              },
+              {
+                "isCode": true,
+                "content": "var a = 42;\nvar b = (a > 41) ? \"hello\" : \"world\";",
+                "_id": "59fdf837484b9c00049d20a2"
+              },
+              {
+                "isCode": false,
+                "content": "similar to:",
+                "_id": "59fdf837484b9c00049d20a1"
+              },
+              {
+                "isCode": true,
+                "content": "var b;\nif (a > 41) {\n   b = \"hello\";\n}\nelse {\n   b = \"world\";\n}",
+                "_id": "59fdf837484b9c00049d20a0"
+              },
+              {
+                "isCode": false,
+                "content": "If the test expression (`a > 41` here) evaluates as `true`, the first clause (`\"hello\"`) results, otherwise the second clause (`\"world\"`) results, and whatever the result is then gets assigned to `b`.",
+                "_id": "59fdf837484b9c00049d209f"
+              }
+            ]
+          },
+          {
+            "_id": "59fdf88f484b9c00049d20a4",
+            "text": "Which of the following defines scope best for variables initialized with `var` keyword?",
+            "code": "",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#function-scopes",
+            "solutionLinkText": "Read More on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "function",
+                "correct": true,
+                "_id": "59fdf88f484b9c00049d20a8"
+              },
+              {
+                "text": "blocks {}",
+                "correct": false,
+                "_id": "59fdf88f484b9c00049d20a7"
+              },
+              {
+                "text": "parantheses ()",
+                "correct": false,
+                "_id": "59fdf88f484b9c00049d20a6"
+              },
+              {
+                "text": "objects",
+                "correct": false,
+                "_id": "59fdf88f484b9c00049d20a5"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "Variables declared with `var` keyword will belong to the current function scope, or the global scope if at the top level outside of any function.",
+                "_id": "59fdf88f484b9c00049d20a9"
+              }
+            ]
+          },
+          {
+            "_id": "59fdf908484b9c00049d20aa",
+            "text": "Which of the following is wrong about Javascript functions?",
+            "code": "var foo = function() {\n\t// ..\n};\nvar x = function bar(){\n\t// ..\n};",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#functions-as-values",
+            "solutionLinkText": "Read More on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "Even if a value(argument) can be passed to a function, function itself can be a value that is assigned to variables.",
+                "correct": false,
+                "_id": "59fdf908484b9c00049d20ae"
+              },
+              {
+                "text": "Anonymous function expression is assigned to `foo` variable in the above code.",
+                "correct": false,
+                "_id": "59fdf908484b9c00049d20ad"
+              },
+              {
+                "text": "Function expression named bar is assigned to `x` variable in the above code.",
+                "correct": false,
+                "_id": "59fdf908484b9c00049d20ac"
+              },
+              {
+                "text": "Assignment to `foo` variable will throw an error, because the function expression has no name.",
+                "correct": true,
+                "_id": "59fdf908484b9c00049d20ab"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": true,
+                "content": "function foo() {\n\t// ..\n}",
+                "_id": "59fdf908484b9c00049d20b0"
+              },
+              {
+                "isCode": false,
+                "content": "Though it may not seem obvious from that syntax, `foo` is basically just a variable in the outer enclosing scope that's given a reference to the function being declared. That is, the function itself is a value, just like `42` or `[1,2,3]` would be.\nNot only can you pass a value (argument) to a function, but a function itself can be a value that's assigned to variables, or passed to or returned from other functions.\nAs such, a function value should be thought of as an expression, much like any other value or expression.\nThe first function expression assigned to the `foo` variable is called anonymous because it has no name.\nThe second function expression is named `bar`, even as a reference to it is also assigned to the `x` variable.",
+                "_id": "59fdf908484b9c00049d20af"
+              }
+            ]
+          },
+          {
+            "_id": "59fdf95c484b9c00049d20b1",
+            "text": "Which of the following terms best describe above code?",
+            "code": "(function foo(){\n\tconsole.log( \"Hello!\" );\n})();",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#immediately-invoked-function-expressions-iifes",
+            "solutionLinkText": "Read More on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "Anonymous Function Expression",
+                "correct": false,
+                "_id": "59fdf95c484b9c00049d20b5"
+              },
+              {
+                "text": "Immediately Invoked Function Expressions (IIFEs)",
+                "correct": true,
+                "_id": "59fdf95c484b9c00049d20b4"
+              },
+              {
+                "text": "Constructor Function",
+                "correct": false,
+                "_id": "59fdf95c484b9c00049d20b3"
+              },
+              {
+                "text": "Closure",
+                "correct": false,
+                "_id": "59fdf95c484b9c00049d20b2"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "There's another way to execute a function expression, which is typically referred to as an immediately invoked function expression (IIFE).\nThe outer `(..)` that surrounds the `(function foo(){ .. })` function expression is just a nuance of JS grammar needed to prevent it from being treated as a normal function declaration.\nThe final `()` on the end of the expression -- the `})();` line -- is what actually executes the function expression referenced immediately before it.",
+                "_id": "59fdf95c484b9c00049d20b6"
+              }
+            ]
+          },
+          {
+            "_id": "59fdf9b1484b9c00049d20b7",
+            "text": "What will the above code print out?",
+            "code": "function createSubtractor(x) {\n\tfunction subtract(y) {\n\t\treturn y - x;\n\t};\n\treturn subtract;\n}\nvar minusFive = createSubtractor(5);\nvar minusTwo = createSubtractor(2);\nconsole.log(minusFive(10) - minusTwo(5));",
+            "solutionLink": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch2.md#closure",
+            "solutionLinkText": "Read More on YDKJS",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "2",
+                "correct": true,
+                "_id": "59fdf9b1484b9c00049d20bb"
+              },
+              {
+                "text": "5",
+                "correct": false,
+                "_id": "59fdf9b1484b9c00049d20ba"
+              },
+              {
+                "text": "undefined",
+                "correct": false,
+                "_id": "59fdf9b1484b9c00049d20b9"
+              },
+              {
+                "text": "It will throw an error since the inner function `x` variable depends on outer `x` variable which is inconsistent.",
+                "correct": false,
+                "_id": "59fdf9b1484b9c00049d20b8"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "You can think of closure as a way to \"remember\" and continue to access a function's scope (its variables) even once the function has finished running.\nThe reference to the inner `subtract(..)` function that gets returned with each call to the outer `createSubtractor(..)` is able to remember whatever `x` value was passed in to `createSubtractor(..)`.\n`minusFive` gets a reference to the inner `subtract(..)` function with closure over the `x` parameter of the outer `createSubtractor(..)`\n`minusTwo` gets a reference to the inner `subtract(..)` function with closure over the `x` parameter of the outer `createSubtractor(..)`\nIt remembers outer `x` as 5 for `minusFive` and as `2` for `minusTwo`.\nThe answer will be `2`. `(10 - 5) - (5 - 2)`",
+                "_id": "59fdf9b1484b9c00049d20bc"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5a006fca03c0180004c2199a",
+    "name": "React",
+    "isComingSoon": false,
+    "order": 2,
+    "__v": 1,
+    "quizzes": [
+      {
+        "_id": "5a00708303c0180004c2199d",
+        "name": "React I",
+        "author": "Enigma",
+        "order": 101,
+        "__v": 10,
+        "questions": [
+          {
+            "_id": "5a00724503c0180004c2199e",
+            "text": "Which of the following npm package is used to render to the DOM?",
+            "code": "",
+            "solutionLink": "https://reactjs.org/docs/react-dom.html#overview",
+            "solutionLinkText": "Read more in the React docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "react",
+                "correct": false,
+                "_id": "5a00724503c0180004c219a2"
+              },
+              {
+                "text": "react-navigation",
+                "correct": false,
+                "_id": "5a00724503c0180004c219a1"
+              },
+              {
+                "text": "react-dom",
+                "correct": true,
+                "_id": "5a00724503c0180004c219a0"
+              },
+              {
+                "text": "redux",
+                "correct": false,
+                "_id": "5a00724503c0180004c2199f"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "The react-dom package lets us render to the DOM. We need to install it via the following command:",
+                "_id": "5a00724503c0180004c219a7"
+              },
+              {
+                "isCode": true,
+                "content": "npm install --save react-dom",
+                "_id": "5a00724503c0180004c219a6"
+              },
+              {
+                "isCode": false,
+                "content": "Then we need to import it in our JS code and use it to render to the DOM.",
+                "_id": "5a00724503c0180004c219a5"
+              },
+              {
+                "isCode": true,
+                "content": "import ReactDOM from 'react-dom';\nReactDOM.render(\n  <h1>Hello, world!</h1>,\n  document.getElementById('root')\n);",
+                "_id": "5a00724503c0180004c219a4"
+              },
+              {
+                "isCode": false,
+                "content": "It renders a header saying “Hello, world!” on the page.",
+                "_id": "5a00724503c0180004c219a3"
+              }
+            ]
+          },
+          {
+            "_id": "5a00730003c0180004c219a8",
+            "text": "Why is it not recommended to render React elements into the body node?",
+            "code": "import React from 'react';\nimport { render } from 'react-dom';\nconst node = document.querySelector('body');\nconst element = <div>Hello World!</div>;\nrender(element, node);",
+            "solutionLink": "https://reactjs.org/docs/rendering-elements.html#rendering-an-element-into-the-dom",
+            "solutionLinkText": "Read more in the React docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "`componentDidMount` lifecycle method will not work.",
+                "correct": false,
+                "_id": "5a00730003c0180004c219ac"
+              },
+              {
+                "text": "React does not have full control over body element.",
+                "correct": true,
+                "_id": "5a00730003c0180004c219ab"
+              },
+              {
+                "text": "Children of the elements will not be rendered.",
+                "correct": false,
+                "_id": "5a00730003c0180004c219aa"
+              },
+              {
+                "text": "It will not call the native web API.",
+                "correct": false,
+                "_id": "5a00730003c0180004c219a9"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "React does not have full control over body element. Some browser plugins put HTML elements into body and it can break your React app. Always put a div into body, give it an ID and render into it to prevent any unexpected bugs. The recommended way is as following:\nindex.html File:",
+                "_id": "5a00730003c0180004c219b0"
+              },
+              {
+                "isCode": true,
+                "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-- some code here -->\n  </head>\n  <body>\n    <div id=\"container\"></div>\n  </body>\n</html>",
+                "_id": "5a00730003c0180004c219af"
+              },
+              {
+                "isCode": false,
+                "content": "index.js File:",
+                "_id": "5a00730003c0180004c219ae"
+              },
+              {
+                "isCode": true,
+                "content": "import React from 'react';\nimport { render } from 'react-dom';\nimport App from './src/App';\n\nrender(<App />, document.getElementById('container'));",
+                "_id": "5a00730003c0180004c219ad"
+              }
+            ]
+          },
+          {
+            "_id": "5a00737003c0180004c219b1",
+            "text": "As in above code snippet, does React has to be in the scope even though we don't explicitly use it in our code?",
+            "code": "import React from 'react';\nimport Sidebar from './Sidebar';\nfunction SidebarRight() {\n  return <Sidebar side=\"right\" />;\n}",
+            "solutionLink": "https://reactjs.org/docs/jsx-in-depth.html#react-must-be-in-scope",
+            "solutionLinkText": "Read more in the React docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "Yes, JSX is transpiled to `React.createElement`.",
+                "correct": true,
+                "_id": "5a00737003c0180004c219b5"
+              },
+              {
+                "text": "Yes, JSX is transpiled to `React.cloneElement`",
+                "correct": false,
+                "_id": "5a00737003c0180004c219b4"
+              },
+              {
+                "text": "No, you don't need to import `React` when using functional components.",
+                "correct": false,
+                "_id": "5a00737003c0180004c219b3"
+              },
+              {
+                "text": "No, `ReactDOM` is enough to render functional components.",
+                "correct": false,
+                "_id": "5a00737003c0180004c219b2"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "React must be in scope because behind the scenes React.createElement method is being called when working with JSX.",
+                "_id": "5a00737003c0180004c219b9"
+              },
+              {
+                "isCode": true,
+                "content": "var bar = <div id=\"bar\">Hello!</div>;",
+                "_id": "5a00737003c0180004c219b8"
+              },
+              {
+                "isCode": false,
+                "content": "For example above code is transpiled into this behind the scenes:",
+                "_id": "5a00737003c0180004c219b7"
+              },
+              {
+                "isCode": true,
+                "content": "var bar = React.createElement(\n  \"div\",\n  { id: \"bar\" },\n  \"Hello!\"\n);",
+                "_id": "5a00737003c0180004c219b6"
+              }
+            ]
+          },
+          {
+            "_id": "5a0073cf03c0180004c219ba",
+            "text": "Why is not recommended to change state as in the above code snippet?",
+            "code": "this.setState({\n  counter: this.state.counter + this.props.increment,\n});",
+            "solutionLink": "https://reactjs.org/docs/state-and-lifecycle.html#state-updates-may-be-asynchronous",
+            "solutionLinkText": "Read more in the React docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "State is immutable.",
+                "correct": false,
+                "_id": "5a0073cf03c0180004c219be"
+              },
+              {
+                "text": "Component state should not be directly mutated.",
+                "correct": false,
+                "_id": "5a0073cf03c0180004c219bd"
+              },
+              {
+                "text": "There is no guarantee of synchronous operation of calls to `setState`.",
+                "correct": true,
+                "_id": "5a0073cf03c0180004c219bc"
+              },
+              {
+                "text": "State is mutable.",
+                "correct": false,
+                "_id": "5a0073cf03c0180004c219bb"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "`setState()` does not always immediately update the component. It may batch or defer the update until later. `this.props` and `this.state` may be updated asynchronously, you should not rely on their values for calculating the next state.\nTo fix it, use a second form of setState() that accepts a function rather than an object. That function will receive the previous state as the first argument, and the props at the time the update is applied as the second argument:",
+                "_id": "5a0073cf03c0180004c219c0"
+              },
+              {
+                "isCode": true,
+                "content": "this.setState((prevState, props) => ({\n  counter: prevState.counter + props.increment\n}));",
+                "_id": "5a0073cf03c0180004c219bf"
+              }
+            ]
+          },
+          {
+            "_id": "5a00742303c0180004c219c1",
+            "text": "Is the above code valid JSX expression?",
+            "code": "const element = <h1 class=\"title\">Test</h1>;",
+            "solutionLink": "https://reactjs.org/docs/introducing-jsx.html#specifying-attributes-with-jsx",
+            "solutionLinkText": "Read more in the React docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "Yes",
+                "correct": false,
+                "_id": "5a00742303c0180004c219c3"
+              },
+              {
+                "text": "No",
+                "correct": true,
+                "_id": "5a00742303c0180004c219c2"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "Since JSX is closer to JavaScript than HTML, React DOM uses camelCase property naming convention instead of HTML attribute names. Therefore `class` becomes `className` in JSX.\nThe correct way to write it is as following:",
+                "_id": "5a00742303c0180004c219c5"
+              },
+              {
+                "isCode": true,
+                "content": "const element = <h1 class=\"title\">Test</h1>;",
+                "_id": "5a00742303c0180004c219c4"
+              }
+            ]
+          },
+          {
+            "_id": "5a00748d03c0180004c219c6",
+            "text": "Can a functional React component read its props like above?",
+            "code": "function Message() {\n  return <h1>Hello, {this.props.name}</h1>;\n}",
+            "solutionLink": "https://reactjs.org/docs/components-and-props.html#functional-and-class-components",
+            "solutionLinkText": "Read more in the React docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "Yes",
+                "correct": false,
+                "_id": "5a00748d03c0180004c219c8"
+              },
+              {
+                "text": "No",
+                "correct": true,
+                "_id": "5a00748d03c0180004c219c7"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "No, functional components accept a single “props” object argument with data and returns a React element.\nThe correct way to write it is as following:",
+                "_id": "5a00748d03c0180004c219ca"
+              },
+              {
+                "isCode": true,
+                "content": "function Message(props) {\n  return <h1>Hello, {props.name}</h1>;\n}",
+                "_id": "5a00748d03c0180004c219c9"
+              }
+            ]
+          },
+          {
+            "_id": "5a0074c803c0180004c219cb",
+            "text": "Can you provide more than one JSX element as the children?",
+            "code": "<MyContainer>\n  <MyFirstComponent />\n  <MySecondComponent />\n</MyContainer>",
+            "solutionLink": "https://reactjs.org/docs/jsx-in-depth.html#jsx-children",
+            "solutionLinkText": "Read more in the React docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "Yes",
+                "correct": true,
+                "_id": "5a0074c803c0180004c219cd"
+              },
+              {
+                "text": "No",
+                "correct": false,
+                "_id": "5a0074c803c0180004c219cc"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "You can provide more JSX elements as the children. You can mix together different types of children, so you can use string literals together with JSX children. Below JSX is also valid.",
+                "_id": "5a0074c803c0180004c219cf"
+              },
+              {
+                "isCode": true,
+                "content": "<MyContainer>\n  <MyComponent>\n    Hello world!<MyFirstComponent />\n  </MyComponent>\n</MyContainer>",
+                "_id": "5a0074c803c0180004c219ce"
+              }
+            ]
+          },
+          {
+            "_id": "5a00750703c0180004c219d0",
+            "text": "Do React components modify their props to update their UI as shown above?",
+            "code": "class Example extends React.Component {\n  componentDidMount() {\n    this.props.count = 0;\n  }\n  render() {\n    return <div>{this.props.count}</div>;\n  }\n}",
+            "solutionLink": "https://reactjs.org/docs/components-and-props.html#props-are-read-only",
+            "solutionLinkText": "Read more in the React docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "Yes",
+                "correct": false,
+                "_id": "5a00750703c0180004c219d2"
+              },
+              {
+                "text": "No",
+                "correct": true,
+                "_id": "5a00750703c0180004c219d1"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "Props are read-only. Whether you declare a component as a function or a class, it must never modify its own props. You should use state, it allows React components to change their output over time in response to user actions, network responses, and anything else, without violating this rule.",
+                "_id": "5a00750703c0180004c219d3"
+              }
+            ]
+          },
+          {
+            "_id": "5a00754203c0180004c219d4",
+            "text": "Is it possible to update state values(`cities` and `hotels` in above code) independently?",
+            "code": "class Example extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = { cities: [], hotels: [] };\n  }\n  componentDidMount() {\n    this.setState({ cities: ['Paris'] });\n    this.setState({ hotels: ['Sunday'] });\n  }\n}",
+            "solutionLink": "https://reactjs.org/docs/state-and-lifecycle.html#state-updates-are-merged",
+            "solutionLinkText": "Read more in the React docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "Yes",
+                "correct": true,
+                "_id": "5a00754203c0180004c219d6"
+              },
+              {
+                "text": "No",
+                "correct": false,
+                "_id": "5a00754203c0180004c219d5"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "When you call `setState()`, React merges the object you provide into the current state. Therefore you can update them independently with separate `setState()` calls.",
+                "_id": "5a00754203c0180004c219d7"
+              }
+            ]
+          },
+          {
+            "_id": "5a0075a903c0180004c219d8",
+            "text": "How often should we call `ReactDOM.render()` method?",
+            "code": "class Example extends React.Component {\n  constructor(props) {\n    super(props);\n    this.state = { cities: [], hotels: [] };\n  }\n  componentDidMount() {\n    this.setState({ cities: ['Paris'] });\n    this.setState({ hotels: ['Sunday'] });\n  }\n}",
+            "solutionLink": "https://reactjs.org/docs/rendering-elements.html#updating-the-rendered-element",
+            "solutionLinkText": "Read more in the React docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "It should be called every time you change the state.",
+                "correct": false,
+                "_id": "5a0075a903c0180004c219dc"
+              },
+              {
+                "text": "Mostly one time.",
+                "correct": true,
+                "_id": "5a0075a903c0180004c219db"
+              },
+              {
+                "text": "It should be called separately for every functional React Component.",
+                "correct": false,
+                "_id": "5a0075a903c0180004c219da"
+              },
+              {
+                "text": "It should be called separately for every class-based React Component.",
+                "correct": false,
+                "_id": "5a0075a903c0180004c219d9"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "Most React apps call `ReactDOM.render()` once. The recommended way to change UI is to change component state by using `setState()` method.",
+                "_id": "5a0075a903c0180004c219dd"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5a00a05893b5cd00045cd44f",
+    "name": "React Native",
+    "isComingSoon": false,
+    "order": 3,
+    "__v": 1,
+    "quizzes": [
+      {
+        "_id": "5a00a09b93b5cd00045cd451",
+        "name": "React Native I",
+        "author": "Enigma",
+        "order": 201,
+        "__v": 10,
+        "questions": [
+          {
+            "_id": "5a00a0fb93b5cd00045cd452",
+            "text": "Which React Native API should be used to register root component of the app as JS entry point?",
+            "code": "",
+            "solutionLink": "https://facebook.github.io/react-native/docs/appregistry.html",
+            "solutionLinkText": "Read more in Official Docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "Linking",
+                "correct": false,
+                "_id": "5a00a0fb93b5cd00045cd456"
+              },
+              {
+                "text": "AppState",
+                "correct": false,
+                "_id": "5a00a0fb93b5cd00045cd455"
+              },
+              {
+                "text": "AppRegistry",
+                "correct": true,
+                "_id": "5a00a0fb93b5cd00045cd454"
+              },
+              {
+                "text": "AsyncStorage",
+                "correct": false,
+                "_id": "5a00a0fb93b5cd00045cd453"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "AppRegistry is the JS entry point to running all React Native apps. App root components should register themselves with `AppRegistry.registerComponent()`",
+                "_id": "5a00a0fb93b5cd00045cd459"
+              },
+              {
+                "isCode": true,
+                "content": "import { AppRegistry } from 'react-native';\nimport App from './src/App';\n\nAppRegistry.registerComponent('quizzes', () => App);",
+                "_id": "5a00a0fb93b5cd00045cd458"
+              },
+              {
+                "isCode": false,
+                "content": "Please note that this API only works in projects made with `react-native init` or in those made with Create React Native App which have since ejected.",
+                "_id": "5a00a0fb93b5cd00045cd457"
+              }
+            ]
+          },
+          {
+            "_id": "5a00a1f493b5cd00045cd45a",
+            "text": "Which of the following is correct about components and JSX?",
+            "code": "",
+            "solutionLink": "",
+            "solutionLinkText": "",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "We have to use parentheses even if the method is returning one-line JSX.",
+                "correct": false,
+                "_id": "5a00a1f493b5cd00045cd45e"
+              },
+              {
+                "text": "Component nesting is a bad practice comparing component inheritance.",
+                "correct": false,
+                "_id": "5a00a1f493b5cd00045cd45d"
+              },
+              {
+                "text": "We need to use relative path for the libraries that are installed by npm in node_modules folder.",
+                "correct": false,
+                "_id": "5a00a1f493b5cd00045cd45c"
+              },
+              {
+                "text": "Each component must return a single top-level JSX tag for releases before React 16.",
+                "correct": true,
+                "_id": "5a00a1f493b5cd00045cd45b"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "Parentheses are necessary while returning multi-line JSX. it is up to you to use parentheses while returning one-line JSX. The following JSX return is valid:",
+                "_id": "5a00a1f493b5cd00045cd464"
+              },
+              {
+                "isCode": true,
+                "content": "return <Text>Hello</Text>;",
+                "_id": "5a00a1f493b5cd00045cd463"
+              },
+              {
+                "isCode": false,
+                "content": "As official docs say we almost never need component inheritance in React. We build the app by nesting components in one another.\nThe dependencies installed by npm doesn't need relative path from the file, we can import with name. For our code files, we need to import with a relative path.",
+                "_id": "5a00a1f493b5cd00045cd462"
+              },
+              {
+                "isCode": true,
+                "content": "// This is an import for a package that is installed with npm\n// No need to provide relative path\nimport _ from 'lodash';\n\n// Following line is importing one of our files.\n// It needs relative path\nimport Header from '../../components/Header';",
+                "_id": "5a00a1f493b5cd00045cd461"
+              },
+              {
+                "isCode": false,
+                "content": "The following will throw an error as it tries to return two JSX elements at the same time:",
+                "_id": "5a00a1f493b5cd00045cd460"
+              },
+              {
+                "isCode": true,
+                "content": "render() {\n  return (\n    <Text>Hello</Text>\n    <Text>World</Text>\n  );\n}",
+                "_id": "5a00a1f493b5cd00045cd45f"
+              }
+            ]
+          },
+          {
+            "_id": "5a00a28093b5cd00045cd465",
+            "text": "For the above code, where do you expect the `Text` to be placed inside the containing `View`?",
+            "code": "<View\n  style={{\n    flexDirection: 'row',\n    justifyContent: 'center',\n    alignItems: 'flex-end',\n    height: 200,\n    width: 200\n  }}\n>\n  <Text>Hey there!</Text>\n</View>",
+            "solutionLink": "https://facebook.github.io/react-native/docs/flexbox.html",
+            "solutionLinkText": "Read More in Official Docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "top left",
+                "correct": false,
+                "_id": "5a00a28093b5cd00045cd469"
+              },
+              {
+                "text": "right and vertically centered",
+                "correct": false,
+                "_id": "5a00a28093b5cd00045cd468"
+              },
+              {
+                "text": "bottom and horizontally centered",
+                "correct": true,
+                "_id": "5a00a28093b5cd00045cd467"
+              },
+              {
+                "text": "bottom right",
+                "correct": false,
+                "_id": "5a00a28093b5cd00045cd466"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "A component can specify the layout of its children using the flexbox algorithm. Flexbox is designed to provide a consistent layout on different screen sizes. You will normally use a combination of `flexDirection`, `alignItems`, and `justifyContent` to achieve the right layout.\n\nFlexbox works the same way in React Native as it does in CSS on the web, with a few exceptions. The defaults are different, with `flexDirection` defaulting to column instead of row, and the `flex` parameter only supporting a single number.\n\nIn the question, when `flexDirection` is set to `row`, `justifyContent` is used to center containing items horizontally. `alignItems` will also push the content to the bottom.",
+                "_id": "5a00a28093b5cd00045cd46a"
+              }
+            ]
+          },
+          {
+            "_id": "5a00a2da93b5cd00045cd46b",
+            "text": "Why `ScrollView` is not a good option for rendering big quantities of content?",
+            "code": "",
+            "solutionLink": "https://facebook.github.io/react-native/docs/flatlist.html",
+            "solutionLinkText": "Read More in Official Docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "ScrollView component displays a scrolling list of changing, but similarly structured data.",
+                "correct": false,
+                "_id": "5a00a2da93b5cd00045cd46f"
+              },
+              {
+                "text": "ScrollView only renders elements that are currently showing on the screen, not all the elements at once.",
+                "correct": false,
+                "_id": "5a00a2da93b5cd00045cd46e"
+              },
+              {
+                "text": "ScrollView renders content asynchronously offscreen.",
+                "correct": false,
+                "_id": "5a00a2da93b5cd00045cd46d"
+              },
+              {
+                "text": "All the elements and views of a ScrollView are rendered, even if they are not currently shown on the screen.",
+                "correct": true,
+                "_id": "5a00a2da93b5cd00045cd46c"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "The ScrollView renders all the elements and views even if they are not in the current viewport. For large quantities of items, you should use a FlatList instead.\n`<ScrollView>` vs `<FlatList>` - which one to use?\nScrollView simply renders all its react child components at once. That makes it very easy to understand and use.\nOn the other hand, this has a performance downside. Imagine you have a very long list of items you want to display, maybe several screens worth of content. Creating JS components and native views for everything all at once, much of which may not even be shown, will contribute to slow rendering and increased memory usage.\nThis is where FlatList comes into play. FlatList renders items lazily, just when they are about to appear, and removes items that scroll way off screen to save memory and processing time.",
+                "_id": "5a00a2da93b5cd00045cd470"
+              }
+            ]
+          },
+          {
+            "_id": "5a00a33c93b5cd00045cd471",
+            "text": "Which of the following is NOT correct about Network Images?",
+            "code": "",
+            "solutionLink": "https://facebook.github.io/react-native/docs/flatlist.html",
+            "solutionLinkText": "Read More in Official Docs",
+            "__v": 0,
+            "answers": [
+              {
+                "_id": "5a00a33c93b5cd00045cd475",
+                "correct": false,
+                "text": "You will need to manually specify the dimensions of your image."
+              },
+              {
+                "_id": "5a00a33c93b5cd00045cd474",
+                "correct": false,
+                "text": "It's highly recommended that you use https as well in order to satisfy App Transport Security requirements on iOS."
+              },
+              {
+                "_id": "5a00a33c93b5cd00045cd473",
+                "correct": true,
+                "text": "If you don't give a size to an image, it will be automatically sized."
+              },
+              {
+                "_id": "5a00a33c93b5cd00045cd472",
+                "correct": false,
+                "text": "You can specify the location of the images by passing `{ uri: '' }` object to the `source` prop."
+              }
+            ],
+            "solution": [
+              {
+                "_id": "5a00a33c93b5cd00045cd476",
+                "content": "In React Native, remote images do not size automatically. Static images loaded from the app bundle via the `require('./my-icon.png')` syntax can be automatically sized because their dimensions are available immediately at the time of mounting.",
+                "isCode": false
+              }
+            ]
+          },
+          {
+            "_id": "5a00a3da93b5cd00045cd477",
+            "text": "Is it possible to add an image as shown in the above code snippet?",
+            "code": "const image = this.props.active ? 'image-active' : 'image-inactive';\n<Image source={require('./assets/' + image + '.png')} />;",
+            "solutionLink": "",
+            "solutionLinkText": "",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "Yes",
+                "correct": false,
+                "_id": "5a00a3da93b5cd00045cd479"
+              },
+              {
+                "text": "No",
+                "correct": true,
+                "_id": "5a00a3da93b5cd00045cd478"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "The image relative location that is provided to `require` function has to be known statically. The code snippet provided in the question is not valid.",
+                "_id": "5a00a3da93b5cd00045cd47a"
+              }
+            ]
+          },
+          {
+            "_id": "5a00a43693b5cd00045cd47b",
+            "text": "Which React Native API is used to store offline app data?",
+            "code": "",
+            "solutionLink": "https://facebook.github.io/react-native/docs/asyncstorage.html",
+            "solutionLinkText": "Read More in Official Docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "SessionStorage",
+                "correct": false,
+                "_id": "5a00a43693b5cd00045cd47f"
+              },
+              {
+                "text": "AsyncStorage",
+                "correct": true,
+                "_id": "5a00a43693b5cd00045cd47e"
+              },
+              {
+                "text": "LocalStorage",
+                "correct": false,
+                "_id": "5a00a43693b5cd00045cd47d"
+              },
+              {
+                "text": "PersistStore",
+                "correct": false,
+                "_id": "5a00a43693b5cd00045cd47c"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "AsyncStorage is a built-in React Native API for client-side data persistence. The AsyncStorage API is promise-based. All getting and setting of key-value pairs is asynchronous. `getItem` and `setItem` calls can be used to read and write to AsyncStorage respectively.\nExample of persisting data:",
+                "_id": "5a00a43693b5cd00045cd483"
+              },
+              {
+                "isCode": true,
+                "content": "try {\n  await AsyncStorage.setItem('@MySuperStore:key', 'I like to save it.');\n} catch (error) {\n  // Error saving data\n}",
+                "_id": "5a00a43693b5cd00045cd482"
+              },
+              {
+                "isCode": false,
+                "content": "Example of fetching data:",
+                "_id": "5a00a43693b5cd00045cd481"
+              },
+              {
+                "isCode": true,
+                "content": "try {\n  const value = await AsyncStorage.getItem('@MySuperStore:key');\n  if (value !== null){\n    // We have data!!\n    console.log(value);\n  }\n} catch (error) {\n  // Error retrieving data\n}",
+                "_id": "5a00a43693b5cd00045cd480"
+              }
+            ]
+          },
+          {
+            "_id": "5a00a4c893b5cd00045cd484",
+            "text": "`console.log()` statements are automatically removed while bundling to prevent performance issues.",
+            "code": "",
+            "solutionLink": "https://facebook.github.io/react-native/docs/performance.html#using-console-log-statements",
+            "solutionLinkText": "Read More in Official Docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "True",
+                "correct": false,
+                "_id": "5a00a4c893b5cd00045cd486"
+              },
+              {
+                "text": "False",
+                "correct": true,
+                "_id": "5a00a4c893b5cd00045cd485"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "When running a bundled app, `console.log()` statements can cause a big bottleneck in the JavaScript thread. React Native does not remove these statements automatically, so make sure to remove them before bundling.",
+                "_id": "5a00a4c893b5cd00045cd487"
+              }
+            ]
+          },
+          {
+            "_id": "5a00a50593b5cd00045cd488",
+            "text": "The timer in above code snippet can fire even after the component was unmounted.",
+            "code": "setTimeout(() => {\n  this.setState({ isComplete: true });\n}, 1000);",
+            "solutionLink": "",
+            "solutionLinkText": "",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "True",
+                "correct": true,
+                "_id": "5a00a50593b5cd00045cd48a"
+              },
+              {
+                "text": "False",
+                "correct": false,
+                "_id": "5a00a50593b5cd00045cd489"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "Timers should be properly cleaned up when the component unmounts. In the question code, uncleared timer can cause the app to try to change the state of an unmounted component. To clear a timer when the component unmounts, we can use `componentWillUnmount()` lifecycle method:",
+                "_id": "5a00a50593b5cd00045cd48c"
+              },
+              {
+                "isCode": true,
+                "content": "componentDidMount() {\n  this.timerID = setInterval(\n    () => this.somefunc(),\n    1000\n  );\n}\ncomponentWillUnmount() {\n  clearInterval(this.timerID);\n}",
+                "_id": "5a00a50593b5cd00045cd48b"
+              }
+            ]
+          },
+          {
+            "_id": "5a00a54e93b5cd00045cd48d",
+            "text": "Which component can be used to prevent device Keyboard to obstruct the content and text inputs?",
+            "code": "",
+            "solutionLink": "https://facebook.github.io/react-native/docs/keyboardavoidingview.html",
+            "solutionLinkText": "Read More in Official Docs",
+            "__v": 0,
+            "answers": [
+              {
+                "text": "KeyboardAvoidingView",
+                "correct": true,
+                "_id": "5a00a54e93b5cd00045cd491"
+              },
+              {
+                "text": "KeyboardDismiss",
+                "correct": false,
+                "_id": "5a00a54e93b5cd00045cd490"
+              },
+              {
+                "text": "KeyboardHidden",
+                "correct": false,
+                "_id": "5a00a54e93b5cd00045cd48f"
+              },
+              {
+                "text": "HideKeyboard",
+                "correct": false,
+                "_id": "5a00a54e93b5cd00045cd48e"
+              }
+            ],
+            "solution": [
+              {
+                "isCode": false,
+                "content": "If the content is wrapped with `<KeyboardAvoidingView>` component, it helps to solve the common problem of views that need to move out of the way of the virtual keyboard. It can automatically adjust either its position or bottom padding based on the position of the keyboard.\n\nExample Usage:",
+                "_id": "5a00a54e93b5cd00045cd493"
+              },
+              {
+                "isCode": true,
+                "content": "<KeyboardAvoidingView behavior=\"padding\">\n  <Card>\n    {this.props.children}\n  </Card>\n</KeyboardAvoidingView>",
+                "_id": "5a00a54e93b5cd00045cd492"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "5a00a06493b5cd00045cd450",
+    "name": "Redux",
+    "isComingSoon": true,
+    "order": 4,
+    "__v": 0,
+    "quizzes": []
+  }
+]

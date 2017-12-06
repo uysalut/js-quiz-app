@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "maxWidth": 450,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    numberOfLines={1}
+    style={
+      Object {
+        "color": "#fff",
+        "fontFamily": "Avenir",
+        "fontSize": 22,
+        "fontWeight": "900",
+        "paddingTop": 8,
+      }
+    }
+  />
+</View>
+`;

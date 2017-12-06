@@ -1,0 +1,4 @@
+<resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">Gc818KT8IfpGHjpcuWUsr1JTT8lI2fb43ee9-30bd-4db0-98b7-0cec807f81f1</string>
+    <string name="app_name">Enigma JS</string>
+</resources>
